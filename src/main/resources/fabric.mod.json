@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "manymoreblocks",
+  "version": "${version}",
+
+  "name": "ManyMoreBlocks",
+  "description": "Extends your block IDs to 4096 and item IDs to 65536!",
+  "authors": [
+    "mine_diver"
+  ],
+  "contact": {
+    "homepage": "https://glass-launcher.net/",
+    "sources": "https://github.com/calmilamsy/BIN-fabric-example-mod",
+    "discord": "mine_diver#0618"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/manymoreblocks/icon.png",
+
+  "environment": "*",
+  "mixins": [
+    "manymoreblocks.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  }
+}

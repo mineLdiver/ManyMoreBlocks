@@ -1,0 +1,34 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.mine_diver.manymoreblocks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinBlock",
+    "MixinBlockBase",
+    "MixinBlockChange0x35S2CPacket",
+    "MixinChunk",
+    "MixinFire",
+    "MixinItemBase",
+    "MixinItemInstance",
+    "MixinLevel",
+    "MixinLevelManager",
+    "MixinMapChunk0x33S2CPacket",
+    "MixinMultiBlockChange0x34S2CPacket",
+    "MixinStats"
+  ],
+  "server": [
+    "server.Mixinclass_70"
+  ],
+  "client": [
+    "client.MixinBaseClientInteractionManager",
+    "client.Mixinclass_556",
+    "client.MixinClientPlayNetworkHandler",
+    "client.MixinItemRenderer",
+    "client.MixinPlayerRenderer",
+    "client.MixinWorldRenderer"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

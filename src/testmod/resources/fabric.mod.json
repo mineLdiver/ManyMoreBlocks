@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "manymoreblocks-test",
+  "version": "${version}",
+
+  "name": "ManyMoreBlocks Test",
+  "description": "Test mod for ManyMoreBlocks",
+  "authors": [
+    "mine_diver"
+  ],
+  "contact": {
+    "homepage": "https://glass-launcher.net/",
+    "sources": "https://github.com/calmilamsy/BIN-fabric-example-mod",
+    "discord": "mine_diver#0618"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/manymoreblocks-test/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+      "net.mine_diver.mmbtest.MMBTest",
+      "net.mine_diver.mmbtest.block.Blocks",
+      "net.mine_diver.mmbtest.item.Items"
+    ]
+  },
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": ">=2.0-PRE2"
+  }
+}
