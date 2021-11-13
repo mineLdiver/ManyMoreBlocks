@@ -9,8 +9,9 @@
     "mine_diver"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/BIN-fabric-example-mod",
+    "homepage": "https://glass-repo.net/repo/mod/manymoreblocks",
+    "sources": "https://github.com/mineLdiver/ManyMoreBlocks",
+    "issues": "https://github.com/mineLdiver/ManyMoreBlocks/issues",
     "discord": "mine_diver#0618"
   },
 

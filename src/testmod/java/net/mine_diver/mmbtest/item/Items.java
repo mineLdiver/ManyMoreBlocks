@@ -9,7 +9,6 @@ import net.modificationstation.stationapi.api.template.item.TemplateItemBase;
 import java.util.*;
 
 import static net.mine_diver.mmbtest.MMBTest.MODID;
-import static net.modificationstation.stationapi.api.registry.Identifier.of;
 
 @Entrypoint(eventBus = @EventBusPolicy(registerInstance = false))
 public class Items {

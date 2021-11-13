@@ -1,6 +1,5 @@
 package net.mine_diver.mmbtest.item;
 
-import net.modificationstation.stationapi.api.registry.Identifier;
 import net.modificationstation.stationapi.api.template.item.TemplateItemBase;
 
 public class ColouredItem extends TemplateItemBase {
