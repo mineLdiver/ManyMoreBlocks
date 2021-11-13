@@ -16,11 +16,11 @@ public class Items {
 
     @EventListener
     private static void reigsterItems(ItemRegistryEvent event) {
-        int itemAmount = 50000;
+        int itemAmount = 5000;
         ITEMS = new TemplateItemBase[itemAmount];
         Random random = new Random(42);
         for (int i = 0; i < itemAmount; i++)
-            ITEMS[i] = new ColouredItem(of(MODID, "test_item_" + i), random.nextInt()).setTranslationKey(MODID, "testItem" + i);
+            ITEMS[i] = new ColouredItem(29000 + i/*of(MODID, "test_item_" + i)*/, random.nextInt()).setTranslationKey(MODID, "testItem" + i);
     }
 
     public static TemplateItemBase[] ITEMS;

@@ -1,4 +1,4 @@
-package net.mine_diver.manymoreblocks.mixin;
+package net.mine_diver.manymoreblocks.mixin.packet;
 
 import net.mine_diver.manymoreblocks.api.util.MathHelper;
 import net.minecraft.packet.play.BlockChange0x35S2CPacket;
@@ -8,6 +8,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.io.*;
 
@@ -40,5 +41,14 @@ public class MixinBlockChange0x35S2CPacket {
     )
     private void writeMMB(DataOutputStream out, CallbackInfo ci) throws IOException {
         out.write(MathHelper.getMMBID((short) blockId));
+    }
+
+    @Inject(
+            method = "length()I",
+            at = @At("RETURN"),
+            cancellable = true
+    )
+    private void addByteLength(CallbackInfoReturnable<Integer> cir) {
+        cir.setReturnValue(cir.getReturnValueI() + 1);
     }
 }

@@ -6,16 +6,23 @@
   "mixins": [
     "MixinBlock",
     "MixinBlockBase",
-    "MixinBlockChange0x35S2CPacket",
     "MixinChunk",
     "MixinFire",
     "MixinItemBase",
     "MixinItemInstance",
     "MixinLevel",
     "MixinLevelManager",
-    "MixinMapChunk0x33S2CPacket",
-    "MixinMultiBlockChange0x34S2CPacket",
-    "MixinStats"
+    "MixinStats",
+    "packet.MixinBlockChange0x35S2CPacket",
+    "packet.MixinEntityEquipment0x5S2CPacket",
+    "packet.MixinInventoryUpdate0x68S2CPacket",
+    "packet.MixinItemEntitySpawn0x15S2CPacket",
+    "packet.MixinMapChunk0x33S2CPacket",
+    "packet.MixinMultiBlockChange0x34S2CPacket",
+    "packet.MixinPlaceBlock0xFC2SPacket",
+    "packet.MixinPlayerSpawn0x14S2CPacket",
+    "packet.MixinSlotClicked0x66C2SPacket",
+    "packet.MixinSlotUpdate0x67S2CPacket"
   ],
   "server": [
     "server.Mixinclass_70"

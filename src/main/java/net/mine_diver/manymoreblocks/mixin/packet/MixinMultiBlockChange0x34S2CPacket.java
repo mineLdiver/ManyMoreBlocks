@@ -1,4 +1,4 @@
-package net.mine_diver.manymoreblocks.mixin;
+package net.mine_diver.manymoreblocks.mixin.packet;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

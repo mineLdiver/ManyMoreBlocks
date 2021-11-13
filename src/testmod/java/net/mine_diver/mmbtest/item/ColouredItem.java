@@ -7,8 +7,8 @@ public class ColouredItem extends TemplateItemBase {
 
     private final int colour;
 
-    public ColouredItem(Identifier identifier, int colour) {
-        super(identifier);
+    public ColouredItem(int id, int colour) {
+        super(id);
         this.colour = colour;
         setTexturePosition(0, 1);
     }
